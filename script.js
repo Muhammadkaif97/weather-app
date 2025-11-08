@@ -2,7 +2,7 @@ const searchForm = document.querySelector('#weather-form');
 const cityInput = document.querySelector('#city-input');
 const weatherDisplay = document.querySelector('#weather-display');
 
-const apiKey = 'e86940934946a1683e9a8aa70bf46b5e';
+const apiKey = 'c0f32a6972954544a52f5d90c76d613e';
 
 searchForm.addEventListener('submit', function(event) {
     event.preventDefault(); 

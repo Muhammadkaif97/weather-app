@@ -1,0 +1,12 @@
+# 1. Operating System Files (Mac/Windows junk)
+.DS_Store
+Thumbs.db
+
+# 2. Key Security (Most Important for Secrets)
+# This prevents accidentally committing files that hold API keys or passwords.
+.env
+config.js
+secrets.json
+
+# 3. Dependencies
+/node_modules
