@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="weather-app-container">
+        
+        <h1 class="app-title">Weather App</h1>
+        
+        <form id="weather-form" class="search-form">
+            <input 
+                type="text" 
+                id="city-input" 
+                class="city-input"
+                placeholder="Enter city name..." 
+                required
+            >
+            <button type="submit" class="search-button">Search</button>
+        </form>
+
+        <div id="weather-display" class="weather-display">
+            <p class="loading-text">Enter a city to get the weather.</p>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            Designed by
+            <a href="https://muhammad-kaif-portfolio.netlify.app/" target="_blank">Muhammad Kaif</a> |
+            <a href="https://github.com/muhammadkaif97" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/muhammadkaifjokhio/" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+
+</body>
+</html>
