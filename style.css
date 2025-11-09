@@ -6,7 +6,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-image: url('assets/weatherbg.jpg'); 
+    background-image: url('Assets/weatherbg.jpg'); 
     background-size: cover;
     background-position: center;
     display: flex;
