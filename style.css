@@ -40,11 +40,13 @@ body {
 
 .search-form {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 2rem;
+    transition: all 0.3s ease;
 }
 
 .city-input {
-    flex: 1;
+    flex: 1 1 auto;
     padding: 0.9rem;
     border: none;
     border-radius: 10px 0 0 10px;
@@ -52,6 +54,8 @@ body {
     background: rgba(255, 255, 255, 0.2);
     color: #ffffff;
     outline: none;
+    min-width: 0;
+    transition: all 0.3s ease;
 }
 
 .city-input::placeholder {
@@ -59,6 +63,7 @@ body {
 }
 
 .search-button {
+    flex: 0 0 auto;
     padding: 0.9rem 1.2rem;
     border: none;
     border-radius: 0 10px 10px 0;
@@ -67,7 +72,8 @@ body {
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 0;
 }
 
 .search-button:hover {
@@ -171,4 +177,20 @@ body {
 
 .site-footer a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .city-input {
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+    }
+
+    .search-button {
+        border-radius: 10px;
+        width: 100%;
+    }
 }
